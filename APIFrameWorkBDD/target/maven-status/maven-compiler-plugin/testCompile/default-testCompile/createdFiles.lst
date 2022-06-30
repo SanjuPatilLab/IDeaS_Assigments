@@ -1,7 +1,0 @@
-com\qa\resources\APIMethods.class
-com\qa\testRunner\TestRunner.class
-com\qa\stepDefinitions\Hooks.class
-com\qa\resources\APIResources.class
-com\qa\resources\Utils.class
-com\qa\stepDefinitions\StepDefinition.class
-com\qa\resources\TestDataBuild.class
