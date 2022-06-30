@@ -5,7 +5,7 @@ import java.io.File;
 public class Utils {
 
 	public static String home = System.getProperty("user.home");;
-	
+
 	public static Boolean fileDownloaded(String fileName,long timeWait) throws InterruptedException {
 
 

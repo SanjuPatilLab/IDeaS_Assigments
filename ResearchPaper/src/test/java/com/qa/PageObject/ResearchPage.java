@@ -70,28 +70,6 @@ public WebDriver rDriver;
 	}
 	
 	
-	public Boolean fileDownloaded(String fileName,long timeWait) throws InterruptedException {
-
-		String home = System.getProperty("user.home");
-		String file_name = fileName;
-		Boolean fileresult = false;
-		String file_with_location = home + "\\Downloads\\" + file_name;
-		System.out.println("Function Name ===========================" + home + "\\Downloads\\" + file_name);
-		File file = new File(file_with_location);
-		for (int i = 0; i < 3; i++) {
-		if (file.exists()) {
-			fileresult = true;
-			break;
-		} else {
-			Thread.sleep(timeWait);
-		}
-		
-		
-	}
-		return fileresult;
-	}
-	
-	
 	
 }
 
