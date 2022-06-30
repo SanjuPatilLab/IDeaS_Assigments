@@ -2,11 +2,14 @@ package com.qa.resources;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import io.cucumber.datatable.DataTable;
 import pojo.Location;
 import pojo.Place;
+import user.Pojo.User;
 
-public class TestDataBuild {
+public class TestDataBuild extends Utils{
 
 
 	public Place placePayload(String name,String language,String address) {
@@ -44,5 +47,17 @@ public class TestDataBuild {
 		return "{\"place_id\":\""+place_Id+"\"}";
 		
 	}
+	
+	public String userDetailsPayLoad(DataTable dataTable) throws Exception {
+		
+						
+		 Map <String,String>data = dataTable.transpose().asMap();
+		 
+		 return requestBodyMapper(data,User.class);
+		 		
+		 
+		
+	}
+	
 	
 }

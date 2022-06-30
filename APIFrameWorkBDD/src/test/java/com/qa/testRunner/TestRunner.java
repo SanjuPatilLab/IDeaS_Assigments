@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = "src/test/java/com/qa/features",
 		glue = {"com.qa.stepDefinitions"},
-		//tags="@DeletePlace",
+		tags="@DeletePlace",
 		dryRun = false,
 		plugin = {"pretty",
 				"json:target/jsonReports/cucumber-report.json",

@@ -65,6 +65,12 @@
     <version>2.13.3</version>
 </dependency>
 
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>3.3.0</version>
+    <scope>test</scope>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
